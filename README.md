@@ -265,6 +265,10 @@ Connection 与 Model 都存在于 egg-model 插件中，但它们两个是独立
 + Model 不一定要由 Connection 创建，正如前文所述，一个放在 **app/model** 目录下并且能接受 `ctx` 的类就能是一个 Model；
 + 通常情况下，推荐 Connection 与 Model 结合使用。
 
+## MISC
+
++ **app/model** 目录可配。如果使用者为 Java 转过来的，也可以供其自定义目录名为 **app/dao**。
+
 ## 小结
 
 本次 RFC 主要为了统一 Egg.js 的 Model 层，有以下几点：
